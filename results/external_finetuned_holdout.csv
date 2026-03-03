@@ -1,0 +1,3 @@
+source,n,recall@0.500,recall@0.622,recall@0.700
+external_mureka,10,1.0,1.0,1.0
+external_tad_ai,10,1.0,1.0,1.0

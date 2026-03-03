@@ -1,0 +1,47 @@
+{
+  "accuracy": 0.9333333333333333,
+  "average_precision": 0.9868902017579197,
+  "confusion_matrix": [
+    [
+      27,
+      3
+    ],
+    [
+      1,
+      29
+    ]
+  ],
+  "classification_report": "              precision    recall  f1-score   support\n\n           0      0.964     0.900     0.931        30\n           1      0.906     0.967     0.935        30\n\n    accuracy                          0.933        60\n   macro avg      0.935     0.933     0.933        60\nweighted avg      0.935     0.933     0.933        60\n",
+  "threshold_policies": [
+    {
+      "policy": "default_0.50",
+      "threshold": 0.49976763129234314,
+      "precision": 0.90625,
+      "recall": 0.9666666666666667
+    },
+    {
+      "policy": "precision_ge_0.90",
+      "threshold": 0.49976763129234314,
+      "precision": 0.90625,
+      "recall": 0.9666666666666667
+    },
+    {
+      "policy": "precision_ge_0.95",
+      "threshold": 0.6222071051597595,
+      "precision": 0.9629629629629629,
+      "recall": 0.8666666666666667
+    },
+    {
+      "policy": "precision_ge_0.99",
+      "threshold": 0.7004963755607605,
+      "precision": 1.0,
+      "recall": 0.8
+    },
+    {
+      "policy": "recall_ge_0.95",
+      "threshold": 0.5098710060119629,
+      "precision": 0.9354838709677419,
+      "recall": 0.9666666666666667
+    }
+  ]
+}
