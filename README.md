@@ -1,6 +1,6 @@
 # AI Music Detection Under Generator Shift
 
-This repository contains a fully reproducible demonstration of an AI music detection pipeline designed to evaluate generalization under generator distribution shift.
+This repository presents a fully reproducible demonstration of an AI music detection pipeline designed to evaluate generalization under generator distribution shift.
 
 The project mirrors a larger capstone conducted with Sound Ethics, where the core finding was that detection models often fail when exposed to audio from unseen generators.
 
@@ -94,6 +94,7 @@ python -m src.evaluate_external \
 - Fine tuning on a small set of generators dramatically improves robustness
 - Fine tuning introduces measurable tradeoffs in original validation performance
 - Threshold selection meaningfully affects deployment risk
+- Strong validation accuracy does not guarantee robustness under distribution shift
 
 # Notebook Walkthrough
 
