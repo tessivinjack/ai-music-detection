@@ -50,6 +50,11 @@ Python 3.10+ recommended
 
 # Reproducible Quickstart
 
+Data note:
+- Audio files are not included in the repo
+- To reproduce end-to-end, place real audio under data/raw/... and run src.preprocess* scripts to generate features/manifests
+- The notebook can be viewed without rerunning training
+
 ### 1. Train baseline model
 ```
 python -m src.train_baseline
@@ -82,9 +87,7 @@ python -m src.finetune_external
 
 ### 7. Evaluate fine tuned model on held out generators
 ```
-python -m src.evaluate_external \
-  --external_manifest data/external/splits/external_holdout.csv \
-  --model_path results/baseline_cnn_finetuned.pt
+python -m src.evaluate_external --external_manifest data/external/splits/external_holdout.csv --model_path results/baseline_cnn_finetuned.pt
 ```
 
 # Key Findings
